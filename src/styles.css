@@ -1,2 +1,62 @@
 /* styles.css */
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    background-color: #DEEB77;
+}
+
+.welcome-sign {
+    width: 250px;
+    height: auto;
+}
+
+nav {
+    background-color: #4EA858;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+#content {
+    height: 100%;
+    background-color: #C78345;
+    padding: 50px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.dialog {
+    background-color: #DEEB77;
+    flex: 1;
+    padding: 50px;
+}
+
+/* home page */
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcome-message {
+    color: #4B040C;
+    font-weight: bold;
+}
