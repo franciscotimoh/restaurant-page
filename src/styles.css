@@ -49,7 +49,6 @@ nav {
 }
 
 /* home page */
-
 .home {
     display: flex;
     flex-direction: column;
@@ -60,3 +59,27 @@ nav {
     color: #4B040C;
     font-weight: bold;
 }
+
+/* menu page */
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-item > img {
+    width: 400px;
+    height: auto;
+}
+
+@media (max-width: 1400px) {
+  .menu {
+    flex-direction: column;
+  }
+}
+
