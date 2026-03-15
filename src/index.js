@@ -1,5 +1,6 @@
 import renderHome from './home';
 import renderMenu from './menu'; 
+import renderAbout from './about';
 
 import "./styles.css";
 import trattoriaTrussardi from './images/trattoria-trussardi.png';
@@ -21,23 +22,28 @@ function renderNav() {
 }
 
 function home() {
-    contentDiv = document.querySelector("#content");
     contentDiv.innerHTML = "";
     renderHome();
 }
 
 function menu() {
-    contentDiv = document.querySelector("#content");
     contentDiv.innerHTML = "";
     renderMenu();
+}
+
+function about() {
+    contentDiv.innerHTML = "";
+    renderAbout();
 }
 
 renderNav();
 home();
 
+
 document.addEventListener("click", (e) => {
     const target = e.target.innerText;
 
     if (target === "Home") home();
-    if (target === "Menu") menu(); 
+    if (target === "Menu") menu();
+    if (target === "About") about();
 });
